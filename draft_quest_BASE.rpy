@@ -1,7 +1,7 @@
 ## EXAMPLE QUEST
 
-#define NAME OF QUEST OBJECT = Quest("TITLE", "IMAGE", "CLIENT", "CLIENT LOCATION", "REWARD", "SCREEN WITH DESCRIPTION", MAIN STORY TRIGGER, FALSE BY DEFAULT)
-define side_quest001_the_grimm_reaper = Quest("The Grimm Reaper", "qst/img005_the_grimm_reaper.png", "Glynda Goodwitch", "Island Nation of Menagerie", "100 Hunter Merits", "side_quest001_desc", False)
+#define NAME OF QUEST OBJECT = Quest("TITLE", "IMAGE", "CLIENT", "CLIENT LOCATION", "REWARD", "SCREEN WITH DESCRIPTION", DURATION IN NUMBER OF DAYS)
+define side_quest001_the_grimm_reaper = SideQuest("The Grimm Reaper", "qst/img005_the_grimm_reaper.png", "Glynda Goodwitch", "Island Nation of Menagerie", "100 Hunter Merits", "side_quest001_desc", 3)
 
 #DEFINING TRIGGER VARIABLES FOR DESCRIPTION UPDATES, ALWAYS START AS FALSE
 
