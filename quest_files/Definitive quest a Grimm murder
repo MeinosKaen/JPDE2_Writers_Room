@@ -1,0 +1,18 @@
+
+define side_quest002_grimm_murder = SideQuest("A Grimm Murder", "qst/img006_grimm_murder.png", "Duchess Glynda Goodwitch", "Duchy of Peak", "50 Hunter Merits", "side_quest002_desc", -1)
+
+#DEFINING TRIGGER VARIABLES FOR DESCRIPTION UPDATES
+
+default side_quest002_step1 = False
+default side_quest002_step2 = False
+default side_quest002_step3 = False
+
+#SCREEN THAT CONTAINS THE QUEST'S DESCRIPTION
+screen side_quest002_desc():
+    text """A remote location just outside of the protected walls of the Duchy has recently been the site of a gruesome murder. A locked-room murder. You, Penny and Gemma have been dispatched to uncover the truth.""" justify True
+    if side_quest002_step1:
+        text "You arrive at the forest where a hunters' camp lies half-wasted. Clearly, the group had been ambushed or at least attacked by a few Grimm nothing dangerous like a Gargantuan, but definitely at least one of the Grimm who travel in packs. At the outskirts of the camp, you find three other hunters looking at the centre where the body of their dead comrade lies. Your job: find out if it was ‘just a pack of Grimm’ or as Goodwitch suspects—an inside job." justify True
+    if side_quest002_step2:
+        text "Early the next morning, a bloodcurdling scream rips through the air. You rush to the extermination squad’s camp. The squad member you didn't interrogate is now dead laid out ritualistically, arms spread, eyes frozen in terror. The word 'Leave!' is clawed into their chest. Another throwaway dagger lies nearby, identical to the one found before. Whoever—or whatever—is behind this, it’s escalating." justify True
+    if side_quest002_step3:
+        text "The fear and tension have drawn Grimm. Waves of Beowolves assault both camps. You and your team hold the line, while the two surviving squad members defend the rear. During the chaos, another of them falls—leaving only one survivor. You return to Peak to report: mission inconclusive. Cause of death: Unknown. Perpetrator: Unknown, possibly Grimm. Case status: Classified. Reward: 50 Hunter Merits. But a dark suspicion lingers... this is only the beginning." justify True
