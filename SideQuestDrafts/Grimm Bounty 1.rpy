@@ -1,6 +1,8 @@
 #Ryebread Sidequest entry #1, Grimm Bounty 1 Rought Draft
 #How did I do? I'm totally willing to refine this quest after I get feedback about how it can be improved. Espicially in regards to my "coding".
 
+#I require the name of the Ant Grimm from Vacuo, to fix some of the descriptions and dialogue.
+
 #This is a very basic quest, not that interesting, I know. I plan for two sequal quests with greater challenges and greater rewards. 
 #I have better idea's, I just wanted to get one quest done, one that I was confident I could get done, one I knew would be possible to code.
 
