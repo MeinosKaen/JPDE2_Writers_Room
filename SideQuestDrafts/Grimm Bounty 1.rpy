@@ -1,9 +1,10 @@
 #Ryebread Sidequest entry #1, Grimm Bounty 1 Rought Draft
 #How did I do? I'm totally willing to refine this quest after I get feedback about how it can be improved. Espicially in regards to my "coding".
 
-#I require the name of the Ant Grimm from Vacuo, to fix some of the descriptions and dialogue.
-
 #This is a very basic quest, not that interesting, I know. I plan for two sequal quests with greater challenges and greater rewards. 
+#The second and third quests are going to be just like this one, basic dungeon crawler, but the hunted grimm get larger and thus more dangerous. 
+#Grimm Bounty 2 would have the objective of fighting LIZARD and Death Stalker Grimm from Vacuo. While Grimm Bounty 3 would feature Ursa from Vale. 
+
 #I have better idea's, I just wanted to get one quest done, one that I was confident I could get done, one I knew would be possible to code.
 
 #I introduce a new character in this quest, I'm not sure what steps I need to take to code that in.
@@ -18,9 +19,9 @@ define side_quest102_grimm_bounty_1 = Sidequest("Grimm Bounty", "image", "Velma 
 default side_quest102_step1 = False
 
 Screen side_quest102_desc():
-    Text """Velma Garner, a leader of Golden Stream Labs, a lab within the Semer cast of Vacuo, requests captured living grimm. Particularly eight ANT GRIMM from the Vacuo Wastes. The grimm would be used for scientific experimentation, furthering the understanding of humanity’s oldest enemy. They have provided the cages to hold the small grimm. Golden Stream Labs will be providing transportation for the Hunters who accept the job, since they need to transport the cages back to Vacuo anyway.""" justify True
+    Text """Velma Garner, a leader of Golden Stream Labs, a lab within the Semer cast of Vacuo, requests captured living grimm. Particularly eight Kataglyphs from the Vacuo Wastes. The grimm would be used for scientific experimentation, furthering the understanding of humanity’s oldest enemy. They have provided the cages to hold the small grimm. Golden Stream Labs will be providing transportation for the Hunters who accept the job, since they need to transport the cages back to Vacuo anyway.""" justify True
     If side_quest102_step1:
-        text """After a grueling day of hunting Grimm, Team JADE has developed skills in the wrangling of ANT GRIMM. The Golden Stream Lab’s airship crew remarked that the wounds Team JADE suffered, are a sign of a respectable job well done. Additionally, they hope to meet JADE again in the future. The Golden Stream Labs crew dropped Team JADE off at Peak, and returned to Vacuo with their newly captured grimm.""" Justify True
+        text """After a grueling day of hunting Grimm, Team JADE has developed skills in the wrangling of Kataglyphs. The Golden Stream Lab’s airship crew remarked that the wounds Team JADE suffered, are a sign of a respectable job well done. Additionally, they hope to meet JADE again in the future. The Golden Stream Labs crew dropped Team JADE off at Peak, and returned to Vacuo with their newly captured grimm.""" Justify True
 
 
 #Quest Events
@@ -35,13 +36,13 @@ Label grimm_bounty_102_event01:
 
     *The captain retreats back into the airship and closes the door. Leaving Team JADE alone in the Grimm infested desert.*
 
-    Jack Neutral: “Alright, team. Our goal is the capture of ANT GRIMM. Capturing them will take finesse and time, it's probably best to only capture Grimm that are alone. So if we found a group, kill all but one. Evelyn, Penny, any intel for me?”
+    Jack Neutral: “Alright, team. Our goal is the capture of Kataglyphs. Capturing them will take finesse and time, it's probably best to only capture Grimm that are alone. So if we found a group, kill all but one. Evelyn, Penny, any intel for me?”
 
     Evelyn Smile: “There’s definitely Grimm in the area. I can hear a few groups.”
 
-    Penny neutral: “I spotted a pack to the north while we were landing, including ANT GRIMM.”
+    Penny neutral: “I spotted a pack to the north while we were landing, including Kataglyphs.”
 
-    Jack smile: “Great work. David, take point. Everyone be careful, if you can’t cage a Grimm safely, kill it. We’ll just find more.”
+    Jack smile: “Great work. [p_n], take point. Everyone be careful, if you can’t cage a Kataglyph safely, kill it. We’ll just find more.”
 
 #These events are meant to happen in order, as its a continued conversation. Is that possible?
 
@@ -65,7 +66,7 @@ Label grimm_bounty_102_event02:
 
 
 Label grimm_bounty_102_event03:
-    *Team JADE has captured several ANT GRIMM and completed their objective. Now they head back towards the Golden Stream Labs airship.*
+    *Team JADE has captured several Kataglyphs and completed their objective. Now they head back towards the Golden Stream Labs airship.*
 
     David neutral: “Maybe Vacuo doesn’t have enough Hunters for these types of missions.”
 
